@@ -10,7 +10,7 @@ namespace PhoneBook.Migrations
 {
     [DbContext(typeof(PhoneBookContext))]
     [Migration("20201104010447_init")]
-    partial class init
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

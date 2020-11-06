@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PhoneBook.Data;
+using PhoneBook.Services;
 
 namespace PhoneBook
 {
@@ -29,6 +30,7 @@ namespace PhoneBook
                 builder => builder.MigrationsAssembly("PhoneBook")));
 
             services.AddControllersWithViews();
+            services.AddScoped<ContactService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
